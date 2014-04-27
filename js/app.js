@@ -14,4 +14,5 @@ $(document).ready(function(){
 	$('.first-content').waypoint(function(){
 		$('#showbar').fadeOut();
 	}, {offset: 'bottom-in-view'});
+	$.scrollUp();
 });
