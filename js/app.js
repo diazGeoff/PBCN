@@ -3,9 +3,15 @@ $(document).ready(function(){
 	$('.buttons').click(function(){
 		var location = $(this).attr('id');
 		if(location == "learn-why"){
-			$('.second-content').animatescroll({scrollSpeed: 2500, easing: 'easeInOutBack'});
+			$('.second-content').animatescroll({scrollSpeed: 2000, easing: 'easeInOutBack'});
 		}else if(location == "what"){
-			$('.third-content').animatescroll({scrollSpeed: 2500, easing: 'easeInOutBack'});
+			$('.third-content').animatescroll({scrollSpeed: 2000, easing: 'easeInOutBack'});
 		}
 	});
+	$('.second-content').waypoint(function(){
+		$('#showbar').fadeIn('slow');				
+	});
+	$('.first-content').waypoint(function(){
+		$('#showbar').fadeOut();
+	}, {offset: 'bottom-in-view'});
 });
