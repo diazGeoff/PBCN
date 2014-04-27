@@ -34,11 +34,28 @@
                 </nav>
             </header>
             </section>
-            <section class="container-content first-content">
+            <div class="clearfix"></div>
+
+            <div id="showbar">
+                <div id="showbar-elements">
+                    <span id="pbcn-hiddenlogo"><a href="#">PBCN</a></span>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Background</a></li>
+                            <li><a href="#">Activities</a></li>
+                            <li><a href="#">Cases</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Donate</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <section class="container-content first-content" data-velocity="-.15">
                 <div id="first-center">
                     <article class="banner-content">
                      <div class="banner-quote"></div>
-                     <a href="#" id="learn-why"><img src="img/learn-why.png" alt=""></a>
+                     <a href="#" id="learn-why" class="buttons"><img src="img/learn-why.png" alt=""></a>
                      </article> 
                 </div>
             </section>
@@ -111,7 +128,7 @@
                     </article>
                 </article>    
                 <div class="clearfix"></div>
-                <div class="what-button"><a href="#"><img src="img/what-button.png"></a></div>
+                <div class="what-button"><a href="#" id="what" class="buttons"><img src="img/what-button.png"></a></div>
             </section>
             </div> 
         <div class="division third"> 
@@ -147,7 +164,11 @@
             <span id="pbcn-rights"><p>PBCN (c) 2014, All Rights Reserved</p></span>
             <span id="webnified"><p>FROM <a href="">Webnified</a> with <3 <img src="img/webnified.png"></p></span>
             </div>
-        </footer>       
+        </footer>
+        <script src="js/jquery-1.8.3.min.js"></script>        
+        <script src="js/animatescroll.js"></script>   
+        <script src="js/jquery.scrolly.js"></script>            
+        <script src="js/app.js"></script>
        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
